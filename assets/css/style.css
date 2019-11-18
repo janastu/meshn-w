@@ -69,3 +69,32 @@ h3{
 	width: 57%;
 	display: block;
 }
+@media (min-width: 320px){
+	.list .item{
+	display: flex;
+	width: 355px;
+	margin: 35px;
+}
+}
+@media (min-width: 480px) {
+	.list .item{
+	display: flex;
+	width: 450px;
+	margin: 35px;
+}
+}
+
+@media (min-width: 576px) {
+	.list .item{
+	display: flex;
+	width: 525px;
+	margin: 35px;
+}
+}
+@media (min-width: 768px) {
+	.list .item{
+	display: flex;
+	width: 540px;
+	margin: 35px;
+}
+}
