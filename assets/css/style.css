@@ -1,0 +1,71 @@
+.item img{ width: 250px; }
+/*.item img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.item p{
+	font-size: 15px;
+	font-family: Arial;
+	color: #652121;
+}*/
+/*h3{
+	text-align: center;
+	display: block;
+	color: #4d2701;
+}*/
+/*body{
+	background-image: url("../img/mesh.jpg");
+}*/
+/*<ul class="dogs">
+		    ${dogs.map(dog => `<li>${dog.name} is ${dog.desc}</li>`).join('')}
+		</ul>
+
+		<ul class="projects list-unstyled">
+		    ${projects.map(project => `<li>${project.name}</li><li>${project.desc}</li><li>${project.category}</li>`).join('')}
+		</ul>*/
+.list{
+	display: block;
+}
+.list .item{
+	display: flex;
+	width: 540px;
+	margin: 35px;
+}
+.item div{
+	margin: 35px;
+}
+.list li{
+	color: #652121;
+}
+li{
+	list-style: none;
+}
+h3{
+	display: block;
+	color: #4d2701;
+}
+.banner{
+	background-image: url(../img/mesh.jpg);
+	background-repeat: no-repeat;
+	height: 89vh;
+	min-height: 100%;
+	background-position: center center;
+	background-size: cover;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.overlay{
+	position: absolute;
+	top: 61px;
+	z-index: 1;
+	left: 8%;
+	background:
+	rgba(255,255,255,0.8);
+	padding-left: 30px;
+	padding-right: 15px;
+	border-radius: 5px;
+	width: 57%;
+	display: block;
+}

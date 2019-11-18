@@ -1,0 +1,25 @@
+[
+	{
+		"name": "MAAYA",
+		"desc": "Audio visual storytelling",
+		"category": "Storytelling"
+	},
+
+	 {
+		"name": "SANGRAHA",
+		"desc": "Traditional knowledge platform",
+		"category": "Biodiversity"
+	},
+
+	{
+		"name": "TALKIE",
+		"desc": "Wi-Fi calling,Chats, File sharing",
+		"category": "Communication"
+	},
+
+	 {
+		"name": "COWDRIVE",
+		"desc": "Uploading and sharing content within a community mesh network.",
+		"category": "cloud"
+	}
+]
