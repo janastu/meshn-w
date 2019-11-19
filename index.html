@@ -10,8 +10,8 @@
 		var projects = [
 		    { name: 'MAAYA', desc:'Audio visual storytelling',category:'Storytelling' },
 		    { name: 'SANGRAHA', desc:'Traditional knowledge platform',category:'Biodiversity'},
-		    { name: 'TALKIE', desc: 'Wi-Fi calling,Chats, File sharing',category:'Communication' },
-		    { name: 'COWDRIVE', desc: 'Uploading and sharing content within a community mesh network.',category:'Cloud' },
+		    { name: 'TALKIE', desc:'Wi-Fi calling,Chats, File sharing',category:'Communication' },
+		    { name: 'COWSHED', desc:'Uploading & sharing content within a community.',category:'Cloud' },
 		    { name: 'BAA', desc: 'The path finder', category:'Tracking'},
 		    {}
 		];
@@ -55,7 +55,7 @@
 	    <section>
 	    	<div class="container-fluid banner">
 	    		<div class="row">
-	    			<div class="hidden-xs overlay"><h1>Welcome To Community Owned Mesh Network</h1></div>
+	    			<div class="hidden-xs overlay"><h1>Welcome To Community Owned Wi-Fi Mesh Network</h1></div>
 	    		</div>
 	    	</div>
 	    </section>
@@ -63,9 +63,9 @@
 		<div class="container list">
 			<h2>Projects:</h2>
 			<div class="item">
-				<a href="https://github.com/janastu/maaya" target="_blank"><img class="img-responsive" src="assets/img/maaya.png"></a>
-				<div id="proj"></div>
-				<p class="hide">Maaya is a class of utilities to generate an AV presentation from Images, Audio and subtitles.</p>
+				<a href="" target="_blank"><img class="img-responsive" src="assets/img/file.png"></a>
+				<div id="cow-drive"></div>
+				<p class="hide"></p>
 			</div>
 			<div class="item">
 				<a href="http://y8u.8fe.myftpupload.com/en_gb/" target="_blank"><img class="img-responsive" src="assets/img/sangraha.png"></a>
@@ -73,13 +73,14 @@
 				<p class="hide"></p>
 			</div>
 			<div class="item">
+				<a href="https://github.com/janastu/maaya" target="_blank"><img class="img-responsive" src="assets/img/maaya.png"></a>
+				<div id="proj"></div>
+				<p class="hide">Maaya is a class of utilities to generate an AV presentation from Images, Audio and subtitles.</p>
+			</div>
+			<h2>Android Apps</h2>
+			<div class="item">
 				<a href="https://apk4free.net/talkie-pro-wi-fi-calling/" target="_blank"><img class="img-responsive" src="assets/img/talk.png"></a>
 				<div id="wifi-talkie"></div>
-				<p class="hide"></p>
-			</div>
-			<div class="item">
-				<a href="" target="_blank"><img class="img-responsive" src="assets/img/file.png"></a>
-				<div id="cow-drive"></div>
 				<p class="hide"></p>
 			</div>			
 			<div class="item">
@@ -94,7 +95,7 @@
 	<script type="text/javascript">
 		$.each(projects.slice(0,1), function(i, maaya) {
             var ul_name = "<li><h3>"+ maaya.name+ "</h3></li>";            
-            var ul_desc = "<li>" +maaya.desc+ "</li>";
+            var ul_desc = "<li><p>" +maaya.desc+ "</p></li>";
             var ul_cat = "<li>" +maaya.category+ "</li>";
             $("#proj").append(ul_name);
             $("#proj").append(ul_desc);
@@ -106,7 +107,7 @@
 		$.each(projects.slice(1,2), function(i, bio) {
 			//console.log(item,"item");
 		    var ul_name = "<li><h3>"+ bio.name+ "</h3></li>";            
-		    var ul_desc = "<li>" +bio.desc+ "</li>";
+		    var ul_desc = "<li><p>" +bio.desc+ "</p></li>";
 		    var ul_cat = "<li>" +bio.category+ "</li>";
 		    $("#sang").append(ul_name);
 		    $("#sang").append(ul_desc);
@@ -117,7 +118,7 @@
 		$.each(projects.slice(2,3), function(i, talkie) {
 			//console.log(item,"item");
 		    var ul_name = "<li><h3>"+ talkie.name+ "</h3></li>";            
-		    var ul_desc = "<li>" +talkie.desc+ "</li>";
+		    var ul_desc = "<li><p>" +talkie.desc+ "</p></li>";
 		    var ul_cat = "<li>" +talkie.category+ "</li>";
 		    $("#wifi-talkie").append(ul_name);
 		    $("#wifi-talkie").append(ul_desc);
@@ -128,7 +129,7 @@
 		$.each(projects.slice(3,4), function(i, drive) {
 			//console.log(item,"item");
 		    var ul_name = "<li><h3>"+ drive.name+ "</h3></li>";            
-		    var ul_desc = "<li>" +drive.desc+ "</li>";
+		    var ul_desc = "<li><p>" +drive.desc+ "</p></li>";
 		    var ul_cat = "<li>" +drive.category+ "</li>";
 		    $("#cow-drive").append(ul_name);
 		    $("#cow-drive").append(ul_desc);
@@ -139,7 +140,7 @@
 		$.each(projects.slice(4,5), function(i, trace) {
 			//console.log(item,"item");
 		    var ul_name = "<li><h3>"+ trace.name+ "</h3></li>";            
-		    var ul_desc = "<li>" +trace.desc+ "</li>";
+		    var ul_desc = "<li><p>" +trace.desc+ "</p></li>";
 		    var ul_cat = "<li>" +trace.category+ "</li>";
 		    $("#tracer").append(ul_name);
 		    $("#tracer").append(ul_desc);

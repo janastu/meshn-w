@@ -32,12 +32,10 @@
 	width: 540px;
 	margin: 35px;
 }
-.item div{
-	margin: 35px;
-}
 .list li{
-	color: #652121;
+	color: #6FC1A5;
 }
+li p{color: #594A4E;}
 li{
 	list-style: none;
 }
@@ -46,7 +44,7 @@ h3{
 	color: #4d2701;
 }
 .banner{
-	background-image: url(../img/mesh.jpg);
+	background-image: url(../img/mesh.png);
 	background-repeat: no-repeat;
 	height: 89vh;
 	min-height: 100%;
@@ -75,12 +73,18 @@ h3{
 	width: 355px;
 	margin: 35px;
 }
+.item div{
+	margin: 35px -10px 35px 35px;
+}
 }
 @media (min-width: 480px) {
 	.list .item{
 	display: flex;
 	width: 450px;
 	margin: 35px;
+}
+.item div{
+	margin: 35px -10px 35px 35px;
 }
 }
 
@@ -90,11 +94,17 @@ h3{
 	width: 525px;
 	margin: 35px;
 }
+.item div{
+	margin: 35px -65px 35px 35px;
+}
 }
 @media (min-width: 768px) {
 	.list .item{
-	display: flex;
+	display: inline-flex;
 	width: 540px;
 	margin: 35px;
+}
+.item div{
+	margin: 35px -65px 35px 35px;
 }
 }
