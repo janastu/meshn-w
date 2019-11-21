@@ -11,17 +11,18 @@
 		    { name: 'MAAYA', desc:'Audio visual storytelling',category:'Storytelling' },
 		    { name: 'SANGRAHA', desc:'Traditional knowledge platform',category:'Biodiversity'},
 		    { name: 'TALKIE', desc:'Wi-Fi calling,Chats, File sharing',category:'Communication' },
-		    { name: 'COWSHED', desc:'Uploading & sharing content within a community.',category:'Cloud' },
+		    { name: 'COWSHED', desc:'Uploading & sharing content.',category:'Cloud' },
 		    { name: 'BAA', desc: 'The path finder', category:'Tracking'},
+		    { name: 'FollowTheSheep', desc: 'The path finder', category:'Tracking'},
+		    { name: 'Pi Radio', desc: 'Pi recorder', category:'Communication'},
 		    {}
 		];
 	</script>
 </head>
 <body>
 	    <!-- Navigation -->
-	    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+	    <!--nav class="navbar navbar-default navbar-static-top" role="navigation">
 	        <div class="container">
-	            <!-- Logo and responsive toggle -->
 	            <div class="navbar-header">
 	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 	                    <span class="sr-only">Toggle navigation</span>
@@ -35,7 +36,7 @@
 	                	</div>
 	                	CowMesh
 	                </a>
-	            </div>
+	            </div-->
 	            <!-- Navbar links -->
 	            <!--div class="collapse navbar-collapse" id="navbar">
 	                <ul class="nav navbar-nav navbar-right">
@@ -53,9 +54,9 @@
 	        </div><!-- /.container -->
 	    </nav>
 	    <section>
-	    	<div class="container-fluid banner">
+	    	<div class="container banner">
 	    		<div class="row">
-	    			<div class="hidden-xs overlay"><h1>Welcome To Community Owned Wi-Fi Mesh Network</h1></div>
+	    			<div class="overlay"><h1>Welcome To Community Owned Wi-Fi Mesh Network</h1></div>
 	    		</div>
 	    	</div>
 	    </section>
@@ -63,7 +64,7 @@
 		<div class="container list">
 			<h2>Apps and Services:</h2>
 			<div class="item">
-				<a href="" target="_blank"><img class="img-responsive" src="assets/img/file.png"></a>
+				<a href="" target="_blank"><img class="img-responsive" src="assets/img/cowshed.png"></a>
 				<div id="cow-drive"></div>
 				<p class="hide"></p>
 			</div>
@@ -77,6 +78,16 @@
 				<div id="proj"></div>
 				<p class="hide">Maaya is a class of utilities to generate an AV presentation from Images, Audio and subtitles.</p>
 			</div>
+			<div class="item">
+				<a href="https://github.com/janastu/maaya" target="_blank"><img class="img-responsive" src="assets/img/sheep.png"></a>
+				<div id="sheep"></div>
+				<p class="hide">Maaya is a class of utilities to generate an AV presentation from Images, Audio and subtitles.</p>
+			</div>
+			<div class="item">
+				<a href="https://github.com/janastu/maaya" target="_blank"><img class="img-responsive" src="assets/img/piradio.png"></a>
+				<div id="radio"></div>
+				<p class="hide">Maaya is a class of utilities to generate an AV presentation from Images, Audio and subtitles.</p>
+			</div>
 			<h2>Android Apps</h2>
 			<div class="item">
 				<a href="https://apk4free.net/talkie-pro-wi-fi-calling/" target="_blank"><img class="img-responsive" src="assets/img/talk.png"></a>
@@ -84,7 +95,7 @@
 				<p class="hide"></p>
 			</div>			
 			<div class="item">
-				<a href="https://janastu.org/apps/baaapp/userdoc.html" target="_blank"><img class="img-responsive" src="assets/img/baa.png"></a>
+				<a href="https://janastu.org/apps/baaapp/userdoc.html" target="_blank"><img class="img-responsive" src="assets/img/sheep.png"></a>
 				<div id="tracer"></div>
 				<p class="hide"></p>
 			</div>
@@ -137,14 +148,36 @@
 		});
 	</script>	
 	<script type="text/javascript">		
-		$.each(projects.slice(4,5), function(i, trace) {
+		$.each(projects.slice(4,5), function(i, tracker) {
 			//console.log(item,"item");
-		    var ul_name = "<li><h3>"+ trace.name+ "</h3></li>";            
-		    var ul_desc = "<li><p>" +trace.desc+ "</p></li>";
-		    var ul_cat = "<li>" +trace.category+ "</li>";
+		    var ul_name = "<li><h3>"+ tracker.name+ "</h3></li>";            
+		    var ul_desc = "<li><p>" +tracker.desc+ "</p></li>";
+		    var ul_cat = "<li>" +tracker.category+ "</li>";
 		    $("#tracer").append(ul_name);
 		    $("#tracer").append(ul_desc);
 		    $("#tracer").append(ul_cat);
+		});	
+	</script>
+	<script type="text/javascript">		
+		$.each(projects.slice(5,6), function(i, follow) {
+			//console.log(item,"item");
+		    var ul_name = "<li><h3>"+ follow.name+ "</h3></li>";            
+		    var ul_desc = "<li><p>" +follow.desc+ "</p></li>";
+		    var ul_cat = "<li>" +follow.category+ "</li>";
+		    $("#sheep").append(ul_name);
+		    $("#sheep").append(ul_desc);
+		    $("#sheep").append(ul_cat);
+		});
+	</script>	
+	<script type="text/javascript">		
+		$.each(projects.slice(6,7), function(i, radio) {
+			//console.log(item,"item");
+		    var ul_name = "<li><h3>"+ radio.name+ "</h3></li>";            
+		    var ul_desc = "<li><p>" +radio.desc+ "</p></li>";
+		    var ul_cat = "<li>" +radio.category+ "</li>";
+		    $("#radio").append(ul_name);
+		    $("#radio").append(ul_desc);
+		    $("#radio").append(ul_cat);
 		});
 	</script>
 
